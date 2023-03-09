@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    
+    text-align: center;
+    color: #fff;
+}
+.App .logo {
+    font-family: 'Combo', cursive;
+    font-size: 80px;
+}
+.App .setGame {
+    font-family: 'Combo', cursive;
+    font-size: 50px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 15px;
+}
+.column input {
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+}
+.column input:focus {
+    /* display: none; */
+    box-shadow: 0 0 15px #fff;
+}
+.column input::-webkit-input-placeholder {
+    color: #fff;
+}
+.column button {
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-radius: 20px;
+    color:#fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.column button:hover {
+    box-shadow: 0 0 10px #fff;
+}
+.App .play {
+    padding: 15px 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+
+}
+
+.boss {
+    background-image: url(./images/back.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.chat {
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    /* background-color: #fff; */
+    border-radius: 20px;
+    border: 2px solid #fff;
+    overflow-y: auto;
+    left: 25px;
+    top: 50vh;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.chat h1 {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 5px 0;
+}
+.chat h2 {
+    color: gray;
+    
+}
+/* .chat p {
+
+} */
+.chat .last {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.chat .box {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
